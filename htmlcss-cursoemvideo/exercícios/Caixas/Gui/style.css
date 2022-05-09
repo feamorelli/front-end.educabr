@@ -1,0 +1,41 @@
+@charset "UTF-8";
+pa
+
+*{
+    padding: 10px;
+}
+.main {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+body {
+    background-color: orange;
+}
+h1 {
+color:white;
+text-align: center;
+margin: 30px;
+}
+img {
+    border-radius: 10px;
+}
+.botao {
+    width: 100px;
+    height: 48px;
+    margin:auto;
+}
+button {
+    width: 100px;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+p {
+    text-align: center;
+}
+
+.botao:hover > button {
+    background-color: rgb(60, 61, 61);
+    color: white;
+}

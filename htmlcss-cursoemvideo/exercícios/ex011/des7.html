@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagem Flexível</title>
+</head>
+<body>
+    <h1>Imagem Flexível</h1>
+    <p>Essa imagem irá mudar de tamanho a medida que você muda o tamnho da sua tela. <br> Ah, lembrando, não faça guerra, <strong>faça qualquer outra coisa</strong></p>
+
+    <picture>
+        <source media="(max-width:790px)" srcset="https://github.com/gustavoguanabara/html-css/blob/master/desafios/modulo-01/d007/imagens/paisagem-p.png?raw=true" type="image/jpg">
+        <source media="(max-width: 1220px)" srcset="https://github.com/gustavoguanabara/html-css/blob/master/desafios/modulo-01/d007/imagens/paisagem-m.png?raw=true" type="image/jpg">
+        <img src="https://github.com/gustavoguanabara/html-css/blob/master/desafios/modulo-01/d007/imagens/paisagem-g.png?raw=true" alt="Paisagem">
+    </picture>
+
+</body>
+</html>

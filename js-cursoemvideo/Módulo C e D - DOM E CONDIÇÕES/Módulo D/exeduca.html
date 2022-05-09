@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Idade</title>
+</head>
+<body>
+    <h1>Teste de Idade</h1>
+    Que ano você nasceu:
+    <input type="number" name="txtn" id="txtn"> Formato: aaaa
+    <input type="button" value="Verificar" onclick="calcular()">
+    <div id="res"></div>
+
+    <script>
+        function calcular() {
+            var txtn = window.document.getElementById('txtn')
+            var ano = Number(txtn.value)
+            var res = window.document.getElementById('res')
+            var anoatual = 2021
+            var anoa = Number(anoatual.value)
+            var idade = anoa - ano
+            res.innerHTML = `Você tem ${idade} anos`
+        }
+    </script>
+</body>
+</html>

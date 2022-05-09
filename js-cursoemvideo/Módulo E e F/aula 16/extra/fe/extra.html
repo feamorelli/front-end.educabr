@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Investimento no CLT</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Investimento no CLT</h1>
+    </header>
+    <section>
+        <div>
+            <p>
+                Digite o salário bruto mensal do CLT em R$:
+               <input type="number" name="sal" id="sal" class="bot">
+            </p>
+            
+            <p>
+                Digite o valor do vale trasnporte por dia em R$:
+                <input type="number" name="vt" id="vt" class="bot">
+                 
+            </p>
+            
+            <p>
+                Digite o valor dos benefícios do CLT em R$:
+                <input type="number" name="ben" id="ben" class="bot">
+                 
+            </p>
+            <input type="button" value="Calcular" onclick="calcular()">
+        </div>
+        <br>
+        <div id="res">
+
+        </div>
+    </section>
+    <footer>
+        <p>&copy; CursoemVídeo</p>
+    </footer>
+    
+    <script src="script.js"></script>
+
+</body>
+</html>

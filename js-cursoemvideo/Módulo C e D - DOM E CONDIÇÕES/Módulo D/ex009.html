@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nacionalidade</title>
+</head>
+<body>
+    <h1>Nacionalidades</h1>
+    Digite seu país: 
+    <input type="radio" name="radnac" id="br" checked>
+                <label for="br">Brasil</label>
+                <input type="radio" name="radnac" id="es">
+                <label for="es">Outro país</label>
+    <input type="button" value="Verificar" onclick="verificar()">
+    <div id="res">
+
+    </div>
+
+    <script>
+        function verificar() {
+            var pais = document.getElementsByName('radnac')
+            var res = document.getElementById('res')
+            if (pais[0].checked) {
+                res.innerHTML = `<p>Ah, legal, se é do Brasil, você é Brasileiro</p>`
+            }
+            else {
+                res.innerHTML = `<p>Ah, boa, você é estrangeiro. Seja bem vind@!</p>`
+            }
+
+        }
+    </script>
+</body>
+</html>

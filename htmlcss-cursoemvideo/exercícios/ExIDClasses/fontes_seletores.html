@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes e Seletores Personalizados</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Roboto:wght@400;700&display=swap');
+        
+        /*
+        Para importar uma fonte, basta buscá-la no fonts.google, escolher a fontes e os pesos, importar no CSS usando @import, e citar depois no font-family
+        #  = id
+        .  = classes
+        :  = pseudo classes (alterar uma configuração pelo estado de uma classe/id)
+        :: = pseudo elemento (inserir um elemento pelo CSS citando uma classe/id do html)
+        >  = children (citar um elemento que está dentro de outro)
+        */   
+
+        * {
+            padding: 10px;
+        }
+        div > button {
+            background-color: rgb(148, 194, 148);
+            width: 100px;
+            height: 50px;
+            padding: 10px;
+            border-radius: 10px;
+            font-family: 'Roboto', sans-serif;
+            margin-left: 10px;
+        }
+        h1 {
+            font-family: 'Poppins', sans-serif;
+            font-weight: 700;
+            text-align: center;
+        }
+        .outrotitulo {
+            font-weight: 400;
+        }
+
+        p {
+            font-family: 'Roboto', sans-serif;
+            text-align: justify;
+        }
+        div {
+            text-align: center;
+        }
+        div > button:hover {
+            background-color: rgb(50, 185, 50)
+        }
+        .clicar:active {
+            background-color: grey
+        }
+        #comprar:hover {
+            background-color: red;
+            color: white;
+            font-weight: 700;
+            font-size: 15px
+        }
+        .contato::after {
+            content: ' (link)';
+            font-size: 10px;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>
+       Teste das fontes e dos botões 
+    </h1>
+    <p>Nesse exercícios iremos testar fontes e alguns efeitos nos botões. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae illum impedit necessitatibus nobis esse quia. Dolorum nihil mollitia explicabo recusandae eum veritatis, ad sed hic vero unde aperiam, accusamus quidem.</p>
+    <div>
+        <button class = "clicar">
+            saiba mais
+        </button>
+    
+        <button class = "contato">
+            contato
+        </button>
+    
+        <button id = "comprar"> 
+            comprar
+        </button>
+    </div>
+    
+    <h1 class = "outrotitulo">Outro Título</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit praesentium doloremque labore quia, ut dignissimos dolorem ab in hic voluptatem. Mollitia quia minus distinctio. Fuga ea sequi dolor iste Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem excepturi alias, neque ipsum impedit harum quod. Eligendi illo, fugiat doloribus provident quasi dicta assumenda blanditiis maiores facere, ut minus! Fugiat.</p>
+    <button>
+        veja esse
+    </button>
+</body>
+</html>
